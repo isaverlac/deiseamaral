@@ -1,0 +1,456 @@
+/**
+	Autoria: Isabela Andrade
+	Folha de Estilo
+	Cor base: #9DCAE7, #9DCAE7
+**/
+
+strong {
+	color:#9DCAE7;
+}
+
+body {
+	color:#696969;
+	font-family:calibri;
+	font-family: 'Open Sans Condensed', sans-serif;
+	background:#fff;
+}
+
+/*** SCROLLBAR ***/
+
+	::-webkit-scrollbar {width:10px; height:10px; overflow-x: hidden }
+    ::-webkit-scrollbar-thumb:vertical {height:10px; background-color:#9DCAE7; opacity:.5; } 
+    ::-webkit-scrollbar-thumb:horizontal {overflow-x: hidden }
+	
+/* LINKS EM GERAL */
+	
+a {
+text-decoration:none;
+transition:0.5s ease-in; 
+-moz-transition:0.5s ease-in; 
+-webkit-transition:0.3s ease-in; 
+
+}	
+
+/* HEADLINGS */
+
+h1 {
+	color:#9DCAE7;
+	font-family: 'Jura', sans-serif;
+	margin-top:50px;
+	text-align:center;
+}
+
+h2 {	
+	color:#696969;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:20px;
+	}
+	
+h3 {
+	color:#9DCAE7;
+	font-family: 'Open Sans Condensed', sans-serif;
+}	
+
+/* BOTOES */
+
+button {
+	width:200px;
+	text-align:center;
+	background-color:#9DCAE7;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:none;
+	border-top:1px #d5d5d5 solid;
+	border-bottom:2px #b5b5b5 solid;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:5px 35px;
+	text-decoration:none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:20px;	
+}
+	button:hover {
+		opacity:.5;
+	}
+
+	button a {
+		color:#fff;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size:20px;	
+	}
+	
+	
+
+/* HEADER */
+
+header {
+	width:100%;
+	height:200px;
+	position:absolute;
+	padding:5px;
+	left:0;
+	top:0;
+	background:#fff;
+	background-image: url('Imagens/logo.png');
+	background-position: top center;
+	background-repeat:no-repeat;
+	background-size:auto 200px;	
+}
+
+.bordaheader {
+	width:550px;
+	height:200px;
+	position:absolute;
+	padding:5px;
+	left:0;
+	top:0;
+	background:#fff;
+	background-image: url('Imagens/borda.png');
+	background-position: top left;
+	background-repeat:no-repeat;
+	background-size:auto auto;
+}
+
+.bordaheader2 {
+	width:550px;
+	height:200px;
+	position:absolute;
+	padding:5px;
+	right:0;
+	top:0;
+	background:#fff;
+	background-image: url('Imagens/borda.png');
+	background-position: top right;
+	background-repeat:no-repeat;
+	background-size:auto auto;
+	transform: rotate(180deg);
+	
+	
+}
+
+
+
+/* MENU */
+
+nav {
+	width:100%;
+	height:auto;
+	top:210px;
+	position:absolute;
+	padding:5px;
+	left:0;
+	z-index:5;
+	background:#e8e8e8;
+	text-align:center;
+	margin:auto;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+	position: fixed;
+    width: 100%;
+}
+
+
+	nav a {
+		color:#9DCAE7;
+		text-transform:uppercase;
+		text-align:center;
+		width:auto;	
+		margin: 0 30px 0 30px;
+		padding:5px;
+		font-weight:bold;
+	}
+	
+	nav a:hover {
+		color:#696969;
+	}
+
+/* CAIXAS */
+
+.caixas {
+	position:absolute;
+	top:238px;
+	left:0;
+	width:100%;
+}
+
+.caixa {
+	width:100%;
+	height:auto;
+	position:relative;
+	padding:15px;
+	margin:5px;
+	left:0;
+	background:#f1f1f1;
+	text-align:center;
+	margin:auto;
+}
+
+.caixa a {
+	color:#9DCAE7;
+}
+
+.caixa a:hover {
+	color:#696969;
+}
+
+.caixawhite {
+	width:100%;
+	height:auto;
+	position:relative;
+	padding:15px;
+	margin:5px;
+	left:0;
+	background:#ffffff;
+	text-align:center;
+	margin:auto;
+
+}
+
+/** INFOS **/
+
+.infobg {
+	width:100%;
+	background:#f1f1f1;
+
+}
+
+.informacoes {
+	width:50%;
+	position:relative;
+	padding:5px 5px 50px 5px;
+	left:0;
+	background:#f1f1f1;
+	text-align:justify;
+	margin:auto;
+}
+
+.informacoes img.i1 {
+	width:50px;
+	height:50px;
+	margin:5px;
+	float:left;
+}
+
+.informacoes img.i2 {
+	width:50px;
+	height:50px;
+	margin:5px;
+	float:right;
+}
+
+/* CARDAPIO */
+
+.servico {
+	width:100%;
+	position:relative;
+	padding:5px 5px 50px 5px;
+	margin:5px;
+	left:0;
+	background:#fff;
+	text-align:center;
+	margin:auto;
+}
+
+.servico li {
+	width:50%;
+	margin:auto;
+	text-align:center;
+	list-style-type: none;
+	border-bottom: 1px #eee solid;
+	-webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+}
+
+
+.servico li:hover {
+	text-indent:5%;
+}
+
+
+/* orcamento */
+
+.orcamento {
+	width:100%;
+	height:auto;
+	position:relative;
+	padding:15px;
+	margin:5px;
+	left:0;
+	background:#f1f1f1;
+	text-align:center;
+	margin:auto;
+
+}
+
+.orcamento h2 {
+	color:#9DCAE7;
+}
+
+.e {
+	width: 40%;
+	height:auto;
+	margin:auto auto 15px auto;
+	background:#9DCAE7;
+	padding:15px;
+	color:#ffffff;
+}
+
+.e h2 {
+	color:#ffffff;
+}
+
+.e img {
+	width:auto;
+	height:auto;
+}
+label {
+	width:200px;
+	text-align:center;
+	display: inline-block;
+	color:#696969;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:20px;
+}
+
+input{
+	margin-left:10px;
+	width:300px;
+}
+
+input[type='checkbox']{
+	width:auto;
+	margin:auto;
+}
+
+
+
+.checkbox {
+    width: 40%;
+    display: inline-block;
+	text-align:left;
+	margin:5px;
+}
+
+.checkbox:nth-child(odd) {
+    background:#fff;
+}
+
+
+select {
+	margin-left:10px;
+	width:300px;
+	color:#B3A9A9;
+}
+
+option {
+	color:#B3A9A9;
+}
+
+textarea {
+	color:#B3A9A9;
+	font-family:calibri;
+}
+
+/** CONTATO **/
+
+.contato {
+	width:100%;
+	height:auto;
+	position:relative;
+	padding:5px;
+	margin:5px;
+	left:0;
+	background:#fff;
+	text-align:center;
+	margin:auto;
+}
+
+/* FOOTER */
+
+footer {
+	width:100%;
+	height:auto;
+	position:absolute;
+	padding:5px;
+	left:0;
+	background:#eee;
+	color:#696969;
+	padding:5px;
+	text-align:center;
+	margin-top:10px;
+	padding-bottom:50px;
+}
+
+
+footer h2 {
+	color:#9DCAE7;
+	text-align:center;
+	
+}
+
+/** SOBRE MIM **/
+
+.rs {
+	text-align:center;
+	vertical-align: middle;
+	margin-top:20px;
+}
+
+.rs a {
+	color: #696969;
+}
+
+.me {
+	width:70%;
+	margin:auto;
+	padding:10px;
+	height:auto;
+	text-align:justify;
+}
+
+.me img.portrait {
+	width:100px;
+	height:auto;
+	border-radius:100%;
+	float:left;
+	padding-right:10px;
+	margin-top:10px;
+}
+
+.me img {
+	width:40px;
+	margin:5px;
+	vertical-align:middle;
+	margin:1px;
+}
+
+
+
+/** CREDITOS **/
+
+.disclaimer {
+	text-align:center;
+	width:100%;
+	height:auto;
+	background:#696969;
+	color:#ffffff;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+
+
+/* SELECAO COLORIDA  */
+
+::selection {
+	color:#ffffff; 
+	background:#9DCAE7
+	}; 
+
